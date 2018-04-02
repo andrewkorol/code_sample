@@ -1,0 +1,33 @@
+.form-group {
+  width: 250px;
+}
+
+.form-field {
+  margin: 7px 0;
+}
+
+.form-group-input {
+  float: right;
+  border-radius: 3px;
+}
+
+.alert {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 3px;
+  background: #f14444;
+}
+
+.submit-button {
+  margin-top: 5px;
+  padding: 5px;
+  width: 87px;
+  border-radius: 3px;
+  background: lightseagreen;
+  cursor: pointer;
+}
+
+.submit-button-text {
+  text-transform: uppercase;
+  margin-left: 10px;
+}

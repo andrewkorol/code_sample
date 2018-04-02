@@ -1,0 +1,38 @@
+<h1>User's edit</h1>
+<form [formGroup]="form" class="form-group">
+  <div class="form-field">
+    <span>Name: </span>
+    <input type="text" formControlName="name" class="form-group-input">
+    <div class="alert" *ngIf="form.get('name').invalid && form.get('name').touched">
+        This field is required!
+    </div>
+  </div>
+  <div class="form-field">
+    <span>User Name: </span>
+    <input type="text" formControlName="username" class="form-group-input">
+    <div class="alert" *ngIf="form.get('username').invalid && form.get('username').touched">
+      This field is required!
+    </div>
+  </div>
+  <div class="form-field">
+    <span>E-Mail: </span>
+    <input type="text" formControlName="email" class="form-group-input">
+    <div class="alert" *ngIf="form.get('email').hasError('required') && form.get('email').touched">
+      This field is required!
+    </div>
+    <div class="alert" *ngIf="form.get('email').hasError('pattern') && form.get('email').touched">
+      Invalid e-mail!
+    </div>
+  </div>
+  <div class="form-field">
+    <span>Phone: </span>
+    <input type="text" formControlName="phone" class="form-group-input">
+  </div>
+  <div class="form-field">
+    <span>Website: </span>
+    <input type="text" formControlName="website" class="form-group-input">
+  </div>
+  <div class="submit-button" (click)="submitForm()" #submit>
+    <span class="submit-button-text">Submit</span>
+  </div>
+</form>
