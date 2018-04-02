@@ -4,7 +4,6 @@ import {HttpClientModule} from '@angular/common/http';
 
 import {UsersModule} from './pages/users/users.module';
 import {AppComponent} from './app.component';
-import {ProjectsComponent} from './pages/projects/projects-cmp';
 import {ApiService, UsersService} from './services';
 
 
